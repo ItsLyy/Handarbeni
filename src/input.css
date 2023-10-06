@@ -28,19 +28,14 @@ body {
   @apply scale-0;
 }
 
-.contact-active > div:nth-child(1) {
+.media-active{
   transform: rotate(360deg);
   @apply text-opacity-0;
-  @apply hidden;
 }
 
-.contact-active > div:nth-child(2) {
+.media-active > div:nth-child(2) {
   transform: rotate(360deg);
   @apply block;
-}
-
-#contact-logo {
-  transition: display 0s linear 1000s;
 }
 
 @font-face {

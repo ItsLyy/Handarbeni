@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handarbeni Media|Marketing Agency</title>
     <link href="dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
 
 </head>
@@ -133,13 +134,20 @@
 <!-- Fakta Section End -->
 
 <!-- Icon Whatsapp -->
-    <button class="fixed right-10 bottom-10 bg-slate-500 rounded-full h-16 w-16 flex justify-center items-center"> <i data-feather="users"></i> </button>
-    <a href=""> </a>
-    <a href=""> </a>
+    <button id="media-button" class="fixed right-10 bottom-10 ">
+        <div class="relative bg-slate-500 rounded-full h-16 w-16 flex justify-center items-center">
+            <div id class="absolute top-5 transition duration-500">
+                <i id="media-open" data-feather="users"></i>
+            </div>
+            <div class="absolute top-5 hidden">
+                <span><i data-feather="x"></i></div></span>
+            </div>
+        </div>
+    </button>
 <!-- Icon whatsapp end -->
     <script src="dist/js/script.js"></script>
     <script>
         feather.replace();
-      </script>
+    </script>
 </body>
-</html>
+</html> 

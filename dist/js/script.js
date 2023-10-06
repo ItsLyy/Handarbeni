@@ -28,13 +28,10 @@ window.addEventListener("click", function (e) {
 });
 
 // Contact
-const button = document.querySelector("#button-logo");
-const contact = document.querySelector("#contact-logo");
-const cancel = document.querySelector("#x-logo");
-const media = document.querySelector("#media-logo");
+const contact = document.querySelector("#media-button");
+const media = document.querySelector("#media-open");
 
-button.addEventListener("click", function () {
-  contact.classList.toggle("contact-active");
-  cancel.classList.toggle("x-active");
+contact.addEventListener("click", function () {
+  media.classList.toggle("media-active");
   console.log("WOI");
 });
