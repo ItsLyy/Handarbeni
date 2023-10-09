@@ -53,6 +53,10 @@ body {
   @apply -translate-y-32;
 }
 
+.box-ourservice::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: Gilroy;
   src: url(FontsFree-Net-Gilroy-ExtraBold.ttf);
