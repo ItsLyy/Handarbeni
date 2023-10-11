@@ -64,3 +64,10 @@ body {
 h1 {
   font-family: Gilroy;
 }
+
+@media (max-width: 600px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
