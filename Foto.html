@@ -1,60 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foto Portfolio</title>
-    <link href="dist/output.css" rel="stylesheet">
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="lightbox.css">
     <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
 
-</head>
-<body>
-     <!-- Header Start -->
-     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-4">
-                    <a href="index.html" class="font-bold text-lg text-dark flex py-6">
-                        <img src="dist/img/Logo1.png" alt="Logo1" class="w- h-14">
+    <!-- Header Start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="index.html" class="font-bold text-lg text-dark flex py-6">
+              <img src="dist/img/Logo1.png" alt="Logo1" class="w- h-14" />
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
 
-                    </a>
-                </div>
-                <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-                    </button>
-
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-                        <ul class="block lg:flex">
-                            <li class="group">
-                                <a href="index.html" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"  >Beranda</a>
-                            </li>
-                            <li class="group">
-                                <a href="video.html" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"  >Video Production</a>
-                            </li>
-                            <li class="group">
-                                <a href="Foto.html" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"  >Photo Production</a>
-                            </li>
-                            <li class="group">
-                                <a href="index.html#service" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"  >Our Service</a>
-                            </li>
-                            <li class="group">
-                                <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"  >Blog</a>
-                            </li>
-                            <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"  >Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                </div>
-            </div>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="index.html"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="video.html"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Video Production</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="Foto.html"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Photo Production</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="index.html#service"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Our Service</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="index.html#blog"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6289608880809&text=Bisa+saya+konsultasi+disini?&fbclid=PAAaYvc1ozrLkfRiAI9ZRTvqt2YMU1bL3bmwrJoFDivpsxKSA9lxeDzUGdZxc"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
+
     <!-- Header End -->
 
+
+
+    <!-- Foto Start -->
+    <section class="pt-36">
+      <div class="flex flex-wrap items-center justify-center flex-col">
+        <h1 class="text-3xl font-sans font-bold">G a l l e r y</h1>
+      <div class="max-w-[250px] mx-4 py-4 lg:mx-6 xl:mx-8">
+        <a href="https://www.instagram.com/bisnispelajarsuksess.id/" >
+        <img src="dist/img/isnecurities.png" alt="BisnisPelajarSukses" class=""></a>
+    </div>
+    </div>
+    <div class="header">
+      <div class="gallery">
+        <a href="images/foto1.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto1.png" alt="">
+        </a>
+        <a href="images/foto2.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto2.png" alt="">
+        </a>
+        <a href="images/foto3.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto3.png" alt="">
+        </a>
+        <a href="images/foto4.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto4.png" alt="">
+        </a>
+        <a href="images/foto5.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto5.png" alt="">
+        </a>
+        <a href="images/foto6.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto6.png" alt="">
+        </a>
+
+
+      </div>
+    </div>
+  </section>
+  
+    <!-- Foto end -->
+
     <script src="dist/js/script.js"></script>
-</body>
+    <script src="lightbox-plus-jquery.js"></script>
+  </body>
 </html>
