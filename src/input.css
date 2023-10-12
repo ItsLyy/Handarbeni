@@ -49,12 +49,17 @@ body {
 }
 
 #media-open > div:nth-child(1) {
-  right: 2.4rem;
+  right: 2.25rem;
 }
 
 #media-open > div:nth-child(2) {
-  right: 2.2rem;
+  right: 2rem;
   bottom: 8rem;
+}
+
+.media-logo {
+  bottom: 4.25rem;
+  right: 1.3rem;
 }
 
 .box-ourservice::-webkit-scrollbar {

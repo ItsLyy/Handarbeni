@@ -600,10 +600,6 @@ video {
   right: 1rem;
 }
 
-.right-5 {
-  right: 1.25rem;
-}
-
 .right-7 {
   right: 1.75rem;
 }
@@ -614,10 +610,6 @@ video {
 
 .top-0 {
   top: 0px;
-}
-
-.top-16 {
-  top: 4rem;
 }
 
 .top-6 {
@@ -1249,12 +1241,17 @@ body {
 }
 
 #media-open > div:nth-child(1) {
-  right: 2.4rem;
+  right: 2.25rem;
 }
 
 #media-open > div:nth-child(2) {
-  right: 2.2rem;
+  right: 2rem;
   bottom: 8rem;
+}
+
+.media-logo {
+  bottom: 4.25rem;
+  right: 1.3rem;
 }
 
 .box-ourservice::-webkit-scrollbar {
