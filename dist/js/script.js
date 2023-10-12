@@ -33,5 +33,4 @@ const media = document.querySelector("#media-open");
 
 button.addEventListener("click", function () {
   media.classList.toggle("media-active");
-  console.log("WOI");
 });
