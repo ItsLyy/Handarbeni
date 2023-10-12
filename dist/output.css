@@ -604,12 +604,20 @@ video {
   right: 1.25rem;
 }
 
+.right-7 {
+  right: 1.75rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
 .top-0 {
   top: 0px;
 }
 
-.top-5 {
-  top: 1.25rem;
+.top-16 {
+  top: 4rem;
 }
 
 .top-6 {
@@ -728,8 +736,24 @@ video {
   height: 24rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
 .w-16 {
   width: 4rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-60 {
@@ -1204,32 +1228,33 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.media-active > div:nth-child(1) {
+.media-active .open-media > div:nth-child(1) {
   transform: rotate(360deg);
   opacity: 0;
 }
 
-.media-active > div:nth-child(2) {
+.media-active .open-media > div:nth-child(2) {
   transform: rotate(360deg);
   opacity: 1;
 }
 
-.media-active > div:nth-child(3) {
+.media-active > div:nth-child(1) {
   opacity: 1;
-  --tw-translate-y: -4rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translateY(-2.5rem);
 }
 
-.media-active > div:nth-child(4) {
+.media-active > div:nth-child(2) {
   opacity: 1;
-  --tw-translate-y: -6rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translateY(-6.5rem);
 }
 
-.media-active > div:nth-child(5) {
-  opacity: 1;
-  --tw-translate-y: -8rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+#media-open > div:nth-child(1) {
+  right: 2.4rem;
+}
+
+#media-open > div:nth-child(2) {
+  right: 2.2rem;
+  bottom: 8rem;
 }
 
 .box-ourservice::-webkit-scrollbar {
@@ -1269,7 +1294,7 @@ h1 {
 }
 
 .gallery img {
-  width: 100%
+  width: 100%;
 }
 
 .hover\:bg-dark:hover {
