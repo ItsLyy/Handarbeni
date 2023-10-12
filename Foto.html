@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foto Portfolio</title>
     <link href="dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="lightbox.css">
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
+
     <!-- Header Start -->
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
@@ -90,55 +93,49 @@
         </div>
       </div>
     </header>
+
     <!-- Header End -->
-    <section class="pt-36 w-96 justify-center items-center">
-      <div class="container">
-        <div
-          class="font-serif flex flex-col gap-4 justify-center items-center text-center text-3x"
-        >
-          <p class="font-sans text-3xl">Gallery insecurties.co</p>
-          <img
-            src="dist/img/isnecurities.png"
-            alt="insecurities"
-            class="w-40 h-40 border rounded-full object-cover justify-center items-center gap-4"
-          />
-        </div>
-        <div
-          class="w-max-full mx-16 my-16 flex flex-col gap-10 box-border h-32 w-32 p-4 border-4 lg:w-20"
-        >
-          <img
-            src="dist/photo/Snapinsta.app_181219535_199710428487951_2492845272588030876_n_1080.jpg"
-            alt=""
-            class="w-full h-[280px] object-cover border-spacing-1 box-border rounded-lg"
-          />
-          <img
-            src="dist/photo/Snapinsta.app_182000964_502877981124742_1978310541011203219_n_1080.jpg"
-            alt=""
-            class="w-full h-[280px] object-cover border-spacing-1 box-border rounded-lg"
-          />
-          <img
-            src="dist/photo/Snapinsta.app_277054865_155145233591875_5472708615514132062_n_1080.jpg"
-            alt=""
-            class="w-full h-[280px] object-cover border-spacing-1 box-border rounded-lg"
-          />
-          <img
-            src="dist/photo/Snapinsta.app_277243903_173958618320563_2665852167843060565_n_1080.jpg"
-            alt=""
-            class="w-full h-[280px] object-cover border-spacing-1 box-border rounded-lg"
-          />
-          <img
-            src="dist/photo/Snapinsta.app_279918177_690509555561635_4565089580770333435_n_1080.jpg"
-            alt=""
-            class="w-full h-[280px] object-cover border-spacing-1 box-border rounded-lg"
-          />
-          <img
-            src="dist/photo/Snapinsta.app_279933760_272605061673611_5454848678406933602_n_1080.jpg"
-            alt=""
-            class="w-full h-[280px] object-cover border-spacing-1 box-border rounded-lg"
-          />
-        </div>
+
+
+
+    <!-- Foto Start -->
+    <section class="pt-36">
+      <div class="flex flex-wrap items-center justify-center flex-col">
+        <h1 class="text-3xl font-sans font-bold">G a l l e r y</h1>
+      <div class="max-w-[250px] mx-4 py-4 lg:mx-6 xl:mx-8">
+        <a href="https://www.instagram.com/bisnispelajarsuksess.id/" >
+        <img src="dist/img/isnecurities.png" alt="BisnisPelajarSukses" class=""></a>
+    </div>
+    </div>
+    <div class="header">
+      <div class="gallery">
+        <a href="images/foto1.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto1.png" alt="">
+        </a>
+        <a href="images/foto2.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto2.png" alt="">
+        </a>
+        <a href="images/foto3.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto3.png" alt="">
+        </a>
+        <a href="images/foto4.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto4.png" alt="">
+        </a>
+        <a href="images/foto5.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto5.png" alt="">
+        </a>
+        <a href="images/foto6.png" data-lightbox="models" data-title="Caption1">
+          <img src="images/foto6.png" alt="">
+        </a>
+
+
       </div>
-    </section>
+    </div>
+  </section>
+  
+    <!-- Foto end -->
+
     <script src="dist/js/script.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
   </body>
 </html>
